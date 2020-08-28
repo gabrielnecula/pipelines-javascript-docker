@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: gabrielneculapipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: gabrielneculapipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: gabrielneculapipelinesjavascriptdocker 
+          image: acrresearch01.azurecr.io/gabrielneculapipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
